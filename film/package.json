@@ -1,0 +1,13 @@
+{
+  "name": "horizonte-film",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HORIZONTE: filme cinematográfico 100% em código (three.js + shaders + Web Audio)",
+  "scripts": {
+    "stills": "node film_render.mjs horizonte.html stills ../out \"k=1&res=0.5\" 42.6 86.2 184",
+    "film": "node film_render.mjs horizonte.html full ../out/HORIZONTE.mp4 \"k=6\"",
+    "qa": "node qa.mjs ../out/HORIZONTE.mp4"
+  },
+  "dependencies": { "puppeteer-core": "^25.12.0", "three": "^0.186.1" }
+}
